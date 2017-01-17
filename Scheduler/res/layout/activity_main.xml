@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ripple="http://schemas.android.com/apk/res/com.example.scheduler" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.scheduler.MainActivity" >
+
+    <com.example.scheduler.Ripple 
+        android:id="@+id/btn"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="@android:drawable/btn_default_small"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.50"
+        ripple:hover="true"  
+        ripple:alphaFactor="0.7" 
+        android:gravity="center"
+        android:text="+"
+        android:textSize="30sp"
+        android:textColor="#FFFFFF" />
+
+    <ListView
+        android:id="@+id/lv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn"
+        android:layout_centerHorizontal="true" >
+
+    </ListView>
+
+</RelativeLayout>
